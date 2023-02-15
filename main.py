@@ -16,22 +16,15 @@ from aiogram.types import ReplyKeyboardRemove, \
 greet_markup = ReplyKeyboardMarkup()
 button_hi = KeyboardButton("🎒 Расписание уроков🎒")
 button_1 = KeyboardButton("🏖Когда каникулы?🏖")
-button_2 = KeyboardButton("🍕Меню столовой🍕")
+
 button_3 = KeyboardButton("🎉Школьные события🎉")
 
 greet_markup.add(button_hi)
 greet_markup.add(button_1)
-greet_markup.add(button_2)
+
 greet_markup.add(button_3)
 
-urlkb=InlineKeyboardMarkup(row_width=1)
-urlbutton1=InlineKeyboardMarkup(text='Понедельник', url='https://лицейтехнополис.рф/food/2023-02-06-sm.xlsx')
-urlbutton2=InlineKeyboardMarkup(text='Вторник', url='https://лицейтехнополис.рф/food/2023-02-07-sm.xlsx')
-urlbutton3=InlineKeyboardMarkup(text='Среда', url='https://лицейтехнополис.рф/food/2023-02-08-sm.xlsx')
-urlbutton4=InlineKeyboardMarkup(text='Четверг', url='https://лицейтехнополис.рф/food/2023-02-09-sm.xlsx')
-urlbutton5=InlineKeyboardMarkup(text='Пятница', url='https://лицейтехнополис.рф/food/2023-02-10-sm.xlsx')
-urlbutton6=InlineKeyboardMarkup(text='4Е', url='https://лицейтехнополис.рф/food/2023-02-11-sm.xlsx')
-urlkb.add(urlbutton1,urlbutton2,urlbutton3,urlbutton4,urlbutton5)
+
 inkb = InlineKeyboardMarkup(row_width=1).add(InlineKeyboardButton(text='1-4', callback_data='fabymi'), InlineKeyboardButton(text='5-11', callback_data='ttt'))
 infaby = InlineKeyboardMarkup(row_width=1).add(InlineKeyboardButton(text='2А', callback_data='ttt'), InlineKeyboardButton(text='2Б', callback_data='ttt'), InlineKeyboardButton(text='2В', callback_data='ttt'), InlineKeyboardButton(text='2Г', callback_data='bbb'), InlineKeyboardButton(text='2Д', callback_data='ttt'))
 anfaby = InlineKeyboardMarkup(row_width=1).add(InlineKeyboardButton(text='4А', callback_data='ttt'), InlineKeyboardButton(text='4Б', callback_data='ttt'), InlineKeyboardButton(text='4В', callback_data='ttt'), InlineKeyboardButton(text='4Г', callback_data='ttt'), InlineKeyboardButton(text='4Д', callback_data='ttt'),InlineKeyboardButton(text='4Е', callback_data='ppp'))
